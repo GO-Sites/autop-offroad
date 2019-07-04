@@ -1,0 +1,52 @@
+.inscricoes {
+    padding: 64px 0;
+    .step {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;   
+        .number {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $orange;
+            border-radius: 50%;
+            margin-right: 8px;
+            color: #fff;
+            h3 {
+                margin: 0;
+            }
+        }
+        .desc {
+            color: $brown;
+            margin: 0;
+            a {
+                text-transform: uppercase;
+                color: $orange;
+                i {
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+                &:hover {
+                    text-decoration: none;
+                    i {
+                        animation-name: bounce-right;
+                        animation-duration: 0.5s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                        animation-direction: alternate;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce-right {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
+}

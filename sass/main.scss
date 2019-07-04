@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'views/home';
+@import 'views/numbers';
+@import 'views/programacao';
+@import 'views/competicoes';
+@import 'views/inscricoes';
+@import 'views/patrocinio';
+
+@import 'footer';
+
+body, html {
+    font-family: 'Gobold Regular';
+}
+
+.head {
+    position: relative;
+    border-left: 8px solid $orange;
+    padding: 8px 16px;
+    .title {
+        color: $brown;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .more {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        background-color: $orange;
+        padding: 8px 16px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        span {
+            z-index: 10;
+        }
+        &:hover {
+            text-decoration: none;
+            color: $orange;
+            background-color: $brown;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.patrocinio {
+    padding: 0 0 64px;
+    .logos-box {
+        @include mobile {
+            margin-top: 32px;
+        }
+    }
+    .logos-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        margin-bottom: 0;
+        @include mobile {
+            margin-top: 8px;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+            .logo {
+                height: 60px;
+                @include mobile {
+                    height: 40px;
+                }
+            }
+            .ssa {
+                height: 50px;
+                @include mobile {
+                    height: 32px;
+                }
+            }
+        }
+    }
+}

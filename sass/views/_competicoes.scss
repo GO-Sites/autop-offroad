@@ -1,0 +1,32 @@
+.competicoes {
+    padding: 64px 0;
+    background-image: url('../assets/img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-blend-mode: multiply;
+    .head {
+        .title {
+            color: #fff;
+        }
+    }
+    .text {
+        margin: 32px 0;
+        color: #fff;
+        font-family: 'Gobold Thin Light Regular';
+    }
+    .more {
+        color: #fff;
+        background-color: $orange;
+        padding: 8px 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            text-decoration: none;
+            color: $orange;
+            background-color: #fff;
+        }
+    }
+}

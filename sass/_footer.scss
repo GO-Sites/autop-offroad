@@ -1,0 +1,56 @@
+.footer {
+    background-color: $brown;
+    padding: 64px 0;
+    color: #fff;
+    .navbar {
+        border-bottom: 1px solid #fff;
+        padding-left: 0;
+        justify-content: center;
+        .navbar-nav {
+            align-items: center;
+        }
+        .nav-item {
+            color: #fff;
+            text-transform: uppercase;
+            transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    .contact-list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 0;
+        font-family: 'Gobold Thin Light Regular';
+        border-bottom: 1px solid #fff;
+        padding-bottom: 16px;
+        .contact-item {
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            .contact-item {
+                margin-top: 4px;
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .copy {
+        font-size: 10px;
+        margin-top: 8px;
+        font-family: 'Gobold Thin Light Regular';
+        color: #ccc;
+        @include mobile {
+            text-align: center;
+        }
+    }
+}
